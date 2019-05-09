@@ -37,10 +37,12 @@ var group = [
 	}
 ];
 for( var i = 0; i < group.length  ; i++ ){
-		 var stud = group[i].name + " " + group[i].lastName + " " + group[i].age + " " + group[i].notebook;
+		 var stud =`${group[i].name} ${group[i].lastName} ${group[i].age} ${group[i].notebook}`;
 		 console.log(stud)
 	}	
   function addNewStud(name, lastName, age, notebook) {
   	var group = group.push ( );
+  	console.log(group)
   }
   
+addNewStud("вася", "чебурашкин",651 , false )
