@@ -5,6 +5,16 @@
 	<title>Document</title>
 </head>
 <body>
-	<script src="script.js"></script>
+	<script src="script.js"></script><br><br>
+	<code>var style = document.head.appendChild(document.createElement('style'))<br>
+	style.textContent = `<br>
+		.redBack {<br>
+    		background-color: red!important;<br>
+		}
+	`
+	for(var elem of document.body.children)<br>
+		elem.tagName === 'SCRIPT' ? null :<br>
+	         elem.className = 'redBack'<br>
+	</code>
 </body>
 </html>
